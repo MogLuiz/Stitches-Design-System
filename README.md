@@ -1,4 +1,3 @@
-<img src="https://storage.googleapis.com/golden-wind/experts-club/capa-github.svg" />
 
 # Implementando Design System com StitchesJS no NextJS.
 
@@ -11,13 +10,13 @@ Nessa aula vamos ver como implementar um Design System utilizando o Stitches, e 
 Primeiramente, você precisa clonar o template do repositório:
 
 ```sh
-git clone git@github.com:rocketseat-experts-club/implementando-design-system-com-stitches design-system-stitches
+git clone https://github.com/MogLuiz/Stitches-Design-System.git
 ```
 
 Navegue até o diretório criado:
 
 ```sh
-cd design-system-stitches
+cd Stitches-Design-System
 ```
 
 (Opcional) Abra o projeto no VSCode:
@@ -44,8 +43,8 @@ yarn dev
 
 ## Expert
 
-| [<img src="https://github.com/josepholiveira.png" width="75px;"/>][1] |
+| [<img src="https://avatars.githubusercontent.com/u/58401291?v=4" width="75px;"/>][1] |
 | :-------------------------------------------------------------------: |
-|                         [Joseph Oliveira][1]                          |
+|                         [Luiz Henrique][1]                          |
 
-[1]: https://github.com/josepholiveira
+[1]: https://github.com/MogLuiz
