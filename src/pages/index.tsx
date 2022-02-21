@@ -46,9 +46,9 @@ const Button = styled("button", {
         borderRadius: "$full",
       },
     },
-    shadow: {
+    outlined: {
       true: {
-        boxShadow: "0 0 8px $$shadowColor",
+        boxShadow: "0 0 2px $$shadowColor",
       },
     },
   },
@@ -56,9 +56,18 @@ const Button = styled("button", {
   compoundVariants: [
     {
       color: "primary",
-      shadow: "true",
+      outlined: true,
       css: {
-        $$shadowColor: "$colors$text"
+        $$shadowColor: "$colors$primary",
+        background: "transparent",
+      },
+    },
+    {
+      color: "shape",
+      outlined: true,
+      css: {
+        $$shadowColor: "$colors$shape",
+        background: "transparent",
       },
     },
   ],
@@ -67,7 +76,7 @@ const Button = styled("button", {
     color: "primary",
     size: "small",
     radius: "default",
-    shadow: true,
+    outlined: true,
   },
 });
 
@@ -77,7 +86,7 @@ const Home: React.FC = () => {
       <Button type="button" color="primary">
         Experts Club
       </Button>
-      <Button type="button" color="shape" size="full" radius="full">
+      <Button type="button" color="shape" size="full" radius="full" outlined={false}>
         Experts Club
       </Button>
     </Flex>
