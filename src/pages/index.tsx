@@ -16,6 +16,8 @@ const Button = styled("button", {
   transition: "background 0.2s",
   fontWeight: "bold",
 
+  $$shadowColor: "",
+
   variants: {
     color: {
       primary: {
@@ -44,12 +46,28 @@ const Button = styled("button", {
         borderRadius: "$full",
       },
     },
+    shadow: {
+      true: {
+        boxShadow: "0 0 8px $$shadowColor",
+      },
+    },
   },
+
+  compoundVariants: [
+    {
+      color: "primary",
+      shadow: "true",
+      css: {
+        $$shadowColor: "$colors$text"
+      },
+    },
+  ],
 
   defaultVariants: {
     color: "primary",
     size: "small",
     radius: "default",
+    shadow: true,
   },
 });
 
