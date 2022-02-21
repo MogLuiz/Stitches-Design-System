@@ -36,11 +36,20 @@ const Button = styled("button", {
         flex: 1,
       },
     },
+    radius: {
+      default: {
+        borderRadius: "$default",
+      },
+      full: {
+        borderRadius: "$full",
+      },
+    },
   },
 
   defaultVariants: {
     color: "primary",
     size: "small",
+    radius: "default",
   },
 });
 
@@ -50,7 +59,7 @@ const Home: React.FC = () => {
       <Button type="button" color="primary">
         Experts Club
       </Button>
-      <Button type="button" color="shape" size="full">
+      <Button type="button" color="shape" size="full" radius="full">
         Experts Club
       </Button>
     </Flex>
