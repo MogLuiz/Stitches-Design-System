@@ -40,7 +40,7 @@ Inicie a aplicação:
 yarn dev
 ```
 
-## Expert
+## Dev
 
 | [<img src="https://avatars.githubusercontent.com/u/58401291?v=4" width="75px;"/>][1] |
 | :-------------------------------------------------------------------: |
